@@ -10,8 +10,10 @@ API
 --------
 ### weather.assistant(city, callback)
 
-### weather.week(city, callback)
 
 ### weather.forecast(city, callback)
+
+
+### weather.week(city, callback)
 
 ...
