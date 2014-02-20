@@ -11,6 +11,13 @@ describe('tw.weather', function () {
             done();
         });
 
+        it('should have a api `now` ', function (done) {
+            if (typeof weather.now !== 'function') {
+                throw new Error('type is ' + typeof weather.now);
+            }
+            done();
+        });
+
         it('should have a api `assistant` ', function (done) {
             if (typeof weather.assistant !== 'function') {
                 throw new Error('type is ' + typeof weather.assistant);

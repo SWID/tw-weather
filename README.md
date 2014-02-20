@@ -8,6 +8,9 @@ Taiwan weather API wrapper for node
 
 API
 --------
+### weather.now(city, callback)
+
+
 ### weather.assistant(city, callback)
 
 
