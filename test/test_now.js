@@ -10,7 +10,6 @@ describe('Test now API', function () {
             this.timeout(5000);
 
             weather.now('', function (err, results) {
-                console.log(results);
                 done();
             });
         });
