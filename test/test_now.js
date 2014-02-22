@@ -7,6 +7,8 @@ describe('Test now API', function () {
 
         // init
         it('test', function (done) {
+            this.timeout(5000);
+
             weather.now('', function (err, results) {
                 console.log(results);
                 done();
@@ -15,5 +17,5 @@ describe('Test now API', function () {
 
 
 
-    })
+    });
 });
