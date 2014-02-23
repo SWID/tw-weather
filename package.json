@@ -20,6 +20,7 @@
     "xml2js": "~0.4.1"
   },
   "devDependencies": {
-    "mocha": "~1.17.1"
+    "mocha": "~1.17.1",
+    "should": "~3.1.2"
   }
 }
