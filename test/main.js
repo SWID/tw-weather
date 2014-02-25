@@ -1,44 +1,38 @@
 var assert = require("assert");
+var should = require('should');
 
 var weather = require('../');
 
-describe('tw.weather', function () {
-    describe('init', function () {
+describe('Test node-tw.weather', function () {
+    describe('Main ', function () {
 
-        // init
-        it('should have a weather object', function (done) {
-            if (typeof weather !== 'object') throw new Error('typeof weather is ' + typeof weather);
+        it('Weather Should.be.a.Object', function (done) {
+            weather.should.be.a.Object;
+            done();
+        });
+    });
+
+    describe('Check APIs', function () {
+
+        it('Weather.now \t\tShould.be.a.Function', function (done) {
+            weather.now.should.be.a.Function;
             done();
         });
 
-        it('should have a api `now` ', function (done) {
-            if (typeof weather.now !== 'function') {
-                throw new Error('type is ' + typeof weather.now);
-            }
+        it('Weather.assistant \tShould.be.a.Function', function (done) {
+            weather.assistant.should.be.a.Function;
             done();
         });
 
-        it('should have a api `assistant` ', function (done) {
-            if (typeof weather.assistant !== 'function') {
-                throw new Error('type is ' + typeof weather.assistant);
-            }
+        it('Weather.forecast \tShould.be.a.Function', function (done) {
+            weather.forecast.should.be.a.Function;
             done();
         });
 
-        it('should have a api `forecast` ', function (done) {
-            if (typeof weather.forecast !== 'function') {
-                throw new Error('type is ' + typeof weather.forecast);
-            }
+        it('Weather.week \t\tShould.be.a.Function', function (done) {
+            weather.week.should.be.a.Function;
             done();
         });
+    });
 
-        it('should have a api `week` ', function (done) {
-            if (typeof weather.week !== 'function') {
-                throw new Error('type is ' + typeof weather.week);
-            }
-            done();
-        });
-
-
-    })
 });
